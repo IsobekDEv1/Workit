@@ -1,0 +1,53 @@
+/* Font Face */
+@font-face {
+    font-family: "Frances 144pt";
+    src: url("./fonts/Fraunces144pt-Semibold.woff2") format("woff2"),
+     url("./fonts/Fraunces144pt-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Manrope";
+    src: url("./fonts/Manrope-Regular.woff2") format("woff2"),
+     url("./fonts/Manrope-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Custom props */
+    :root {
+        /* colors */
+        --dark-purple: #24053E;
+        --eacaplyptus: #44FFA1;
+        --davys-color: #594d62;
+        --ghost-white: #fcf8ff;
+        /* fonts */
+        --heading-font-family: "Fraunces144pt", "Times New Roman", serif;
+        --body-font-family: "Manrope", "Arial", sans-serif
+    }
+/* Global */
+html {
+  box-sizing: border-box;  /* Asosiy bazani belgilayapti */
+  height: 100%;            /* Hamma elementlar 100% bo‘lishi uchun */
+  scroll-behavior: smooth; /* Smooth scroll qo‘shib qo‘yilgan */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* html dan meros oladi (border-box) */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    line-height: 32px;
+    background-color: #fff;
+    color: var(--dark-purple);
+}
