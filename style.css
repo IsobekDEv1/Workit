@@ -51,3 +51,12 @@ body {
     background-color: #fff;
     color: var(--dark-purple);
 }
+
+.container {
+    width: 100%;
+    max-width: 1146px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
